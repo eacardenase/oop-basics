@@ -14,17 +14,17 @@ public class Person {
     }
 
     public Person(String firstname, String lastname, LocalDate dob) {
-        this.firstname = firstname;
-        this.lastname = lastname;
+        this.firstname = firstname.toLowerCase();
+        this.lastname = lastname.toLowerCase();
         this.dob = dob;
     }
 
     public String getFirstname() {
-        return firstname;
+        return firstname.substring(0, 1).toUpperCase() + firstname.substring(1);
     }
 
     public void setFirstname(String firstname) {
-        this.firstname = firstname;
+        this.firstname = firstname.toLowerCase();
     }
 
     public String getLastname() {
