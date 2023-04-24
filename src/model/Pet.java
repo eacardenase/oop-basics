@@ -2,7 +2,7 @@ package model;
 
 import java.time.LocalDate;
 
-public class Pet {
+public class Pet extends Object {
     private String name;
     private LocalDate dob;
 
