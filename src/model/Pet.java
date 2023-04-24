@@ -6,6 +6,8 @@ public class Pet {
     private String name;
     private LocalDate dob;
 
+    public Pet() {}
+
     public Pet(String name, LocalDate dob) {
         this.name = name;
         this.dob = dob;
@@ -25,5 +27,13 @@ public class Pet {
 
     public void setDob(LocalDate dob) {
         this.dob = dob;
+    }
+
+    @Override
+    public String toString() {
+        return "Pet{" +
+                "name='" + name + '\'' +
+                ", dob=" + dob +
+                '}';
     }
 }
